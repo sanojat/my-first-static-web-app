@@ -8,7 +8,7 @@
     let messages = document.querySelector('#messages');
     const apiBaseUrl = window.location.origin;
     const connection = new signalR.HubConnectionBuilder()
-        .withUrl('https://sanojtestazurefunctionapp.azurewebsites.net/api/')
+        .withUrl('https://sanojtestazurefunctionapp.azurewebsites.net/api')
         .configureLogging(signalR.LogLevel.Information)
         .build();
       connection.on('newMessage', (message) => {
